@@ -38,3 +38,6 @@ BU_: XXX
 
 BO_ 1161 RSA: 8 XXX
  SG_ SPEED : 16|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 1162 RSA2: 8 XXX
+ SG_ SIGN : 7|8@0+ (1,0) [0|255] "" XXX
