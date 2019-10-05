@@ -58,9 +58,6 @@ BO_ 820 DOORS: 8 XXX
  SG_ TURN_LIGHT_RIGHT : 30|1@0+ (1,0) [0|1] "" XXX
  SG_ HIGH_BEAM_DISPLAY : 58|1@1+ (1,0) [0|1] "" XXX
 
-BO_ 746 GEAR: 5 XXX
- SG_ PRNDL : 0|3@1+ (1,0) [0|7] "" XXX
-
 BO_ 284 NEW_MSG_1: 8 XXX
  SG_ BRAKE_RELATED : 3|12@0+ (1,0) [0|255] "" XXX
  SG_ BRAKE_RELATED_2 : 17|10@0+ (1,0) [0|255] "" XXX
@@ -89,7 +86,7 @@ BO_ 264 ACCEL_PEDAL_MSG: 8 XXX
  SG_ ACCEL_PEDAL : 32|4@1+ (1,-7) [0|15] "" XXX
 
 BO_ 680 GEAR: 8 XXX
- SG_ PRNDL : 23|4@0+ (1,0) [0|1] "" XXX
+ SG_ PRNDL : 23|4@0+ (1,0) [0|15] "" XXX
 
 
 
@@ -99,7 +96,6 @@ CM_ SG_ 514 SPEED_LEFT "TODO find upper limit";
 CM_ SG_ 653 BRAKE_PRESSURE "max seems to be 148";
 CM_ SG_ 820 TURN_LIGHT_LEFT "oscillates with the light blinking";
 CM_ SG_ 820 TURN_LIGHT_RIGHT "hazard blinks both right and left lights";
-CM_ SG_ 746 PRNDL "4=D, 3=N, 2=R, 1=P";
 CM_ SG_ 284 BRAKE_RELATED "Correlates with braking";
 CM_ SG_ 284 SPEED "Another Speed Signal, Maybe RPMs?";
 CM_ SG_ 320 BRAKE_PRESSED "Value is 5 when brake is pressed";
@@ -107,5 +103,5 @@ CM_ SG_ 792 TURN_SIGNALS "1=Left, 2=Right";
 CM_ SG_ 792 HIGH_BEAM_FLASH "use this for genericToggle";
 CM_ SG_ 264 ACCEL_PEDAL "not in ACC so seems to be actual pedal. Use for gasPressed";
 CM_ SG_ 680 PRNDL "e=reverse, c=park, d=neutral, 1=drive, 2=drive, 3=drive, 4=drive, 5=drive, 6=drive, 7=drive, 8=drive";
-VAL_ 746 PRNDL 4 "Drive" 3 "Neutral" 2 "Reverse" 1 "Park" ;
+VAL_ 680 PRNDL 8 "Drive" 7 "Drive" 6 "Drive" 5 "Drive" 4 "Drive" 3 "Drive" 2 "Drive" 1 "Drive" D "Neutral" E "Reverse" C "Park" ;
 VAL_ 792 TURN_SIGNALS 2 "Right" 1 "Left" ;
