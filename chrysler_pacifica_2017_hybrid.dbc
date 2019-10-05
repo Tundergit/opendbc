@@ -88,6 +88,9 @@ BO_ 792 STEERING_LEVERS: 8 XXX
 BO_ 264 ACCEL_PEDAL_MSG: 8 XXX
  SG_ ACCEL_PEDAL : 32|4@1+ (1,-7) [0|15] "" XXX
 
+BO_ 680 GEAR: 8 XXX
+ SG_ PRNDL : 23|4@0+ (1,0) [0|1] "" XXX
+
 
 
 
@@ -103,5 +106,6 @@ CM_ SG_ 320 BRAKE_PRESSED "Value is 5 when brake is pressed";
 CM_ SG_ 792 TURN_SIGNALS "1=Left, 2=Right";
 CM_ SG_ 792 HIGH_BEAM_FLASH "use this for genericToggle";
 CM_ SG_ 264 ACCEL_PEDAL "not in ACC so seems to be actual pedal. Use for gasPressed";
+CM_ SG_ 680 PRNDL "e=reverse, c=park, d=neutral, 1=drive, 2=drive, 3=drive, 4=drive, 5=drive, 6=drive, 7=drive, 8=drive";
 VAL_ 746 PRNDL 4 "Drive" 3 "Neutral" 2 "Reverse" 1 "Park" ;
 VAL_ 792 TURN_SIGNALS 2 "Right" 1 "Left" ;
