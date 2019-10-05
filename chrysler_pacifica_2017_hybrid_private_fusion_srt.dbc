@@ -215,18 +215,28 @@ BO_ 690 d_9: 8 XXX
 
 BO_ 692 d_10: 8 XXX
  SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
-
-BO_ 672 2a0-300-340-380-radar: 8 XXX
  SG_ NEW_SIGNAL_1 : 9|10@0+ (1,0) [0|1023] "" XXX
  SG_ NEW_SIGNAL_2 : 45|10@0+ (1,0) [0|1023] "" XXX
 
-BO_ 704 2c0-320-360-3a0-radar: 8 XXX
-
-BO_ 864 NEW_MSG_1: 8 XXX
+BO_ 864 c_3: 8 XXX
  SG_ LONG_DIST : 35|12@0+ (0,0) [0|255] "m" XXX
  SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ LAT_DIST : 19|12@0+ (0.005,-1000) [0|2047] "m" XXX
+
+BO_ 800 c_2: 8 XXX
+
+BO_ 704 c_1: 8 XXX
+
+BO_ 928 c_4: 8 XXX
+
+BO_ 672 d_1: 8 XXX
+
+BO_ 768 d_2: 8 XXX
+
+BO_ 832 d_3: 8 XXX
+
+BO_ 896 d_4: 8 XXX
 
 
 
