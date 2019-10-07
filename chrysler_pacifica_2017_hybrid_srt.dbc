@@ -85,10 +85,13 @@ BO_ 680 GEAR: 8 XXX
  SG_ PRNDL : 23|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 520 BRAKES: 8 XXX
- SG_ HUMAN_BRAKE : 19|4@0+ (1,0) [0|1] "" XXX
+ SG_ HUMAN_BRAKE : 19|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 571 STEERING_WHEEL_BUTTONS_RIGHT: 8 XXX
  SG_ STEERING_WHEEL_BUTTONS_RIGHT : 7|8@0+ (1,0) [0|15] "" XXX
+
+BO_ 559 GAS_PEDAL_HUMAN: 8 XXX
+ SG_ GASPEDAL_HUMAN : 7|8@0+ (1,0) [0|255] "" XXX
 
 
 
@@ -104,6 +107,8 @@ CM_ SG_ 792 HIGH_BEAM_FLASH "use this for genericToggle";
 CM_ SG_ 792 TURN_SIGNALS "1=Left, 2=Right, 8=FlashtoPass, 4=autohighbeam";
 CM_ SG_ 264 ACCEL_PEDAL "0x7dc=0%, 0xf9c=100%, not in ACC so seems to be actual pedal. Use for gasPressed";
 CM_ SG_ 680 PRNDL "e=reverse, c=park, d=neutral, 1=drive, 2=drive, 3=drive, 4=drive, 5=drive, 6=drive, 7=drive, 8=drive";
+CM_ SG_ 520 HUMAN_BRAKE "0=not pressed, 4=pressed, could be brake lights";
 CM_ SG_ 571 STEERING_WHEEL_BUTTONS_RIGHT "0x04=SET+, 0x08=SET-, 0x01=CANCEL, 0x40=REGCRUISE, 0x10=RES, 0x80=ACC, 0x02=DecreaseFollow, IncreaseFollow not shown";
+CM_ SG_ 559 GASPEDAL_HUMAN "Me pressing the gas";
 VAL_ 792 TURN_SIGNALS 2 "Right" 1 "Left" ;
 VAL_ 680 PRNDL 8 "Drive" 7 "Drive" 6 "Drive" 5 "Drive" 4 "Drive" 3 "Drive" 2 "Drive" 1 "Drive" D "Neutral" E "Reverse" C "Park" ;
