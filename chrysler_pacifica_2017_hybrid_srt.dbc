@@ -97,8 +97,8 @@ BO_ 729 FRONT_CAM: 8 XXX
  SG_ FRONT_CAM : 23|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 280 ENGINE: 8 XXX
- SG_ TORQUE_REQUEST_MAYBE : 19|12@0+ (1,0) [0|4095] "" XXX
  SG_ RPM : 3|12@0+ (1,0) [0|4095] "" XXX
+ SG_ TORQUE_REQUEST_MAYBE : 19|12@0+ (1,0) [0|4095] "" XXX
 
 
 
@@ -120,5 +120,6 @@ CM_ SG_ 571 STEERING_WHEEL_BUTTONS_RIGHT "0x04=SET+, 0x08=SET-, 0x01=CANCEL, 0x4
 CM_ SG_ 559 GASPEDAL_HUMAN "Me pressing the gas";
 CM_ SG_ 729 FRONT_CAM "0x08, 0x0c, 0x04";
 CM_ SG_ 280 RPM "0xdfa is approx 7-800 rpm";
+CM_ SG_ 280 TORQUE_REQUEST_MAYBE "0x7db is 0% or zero request";
 VAL_ 792 TURN_SIGNALS 2 "Right" 1 "Left" ;
 VAL_ 680 PRNDL 8 "Drive" 7 "Drive" 6 "Drive" 5 "Drive" 4 "Drive" 3 "Drive" 2 "Drive" 1 "Drive" D "Neutral" E "Reverse" C "Park" ;
