@@ -37,8 +37,8 @@ BU_: XXX
 
 
 BO_ 258 STEERING: 8 XXX
- SG_ STEER_ANGLE : 4|13@0+ (0.3187251,-1307.888) [-360|360] "deg" XXX
- SG_ STEERING_RATE : 20|13@0+ (1,-4096) [0|8191] "" XXX
+ SG_ STEER_ANGLE : 7|16@0+ (0.3187251,-1307.888) [-360|360] "deg" XXX
+ SG_ STEERING_RATE : 23|16@0+ (1,-4096) [0|8191] "" XXX
 
 BO_ 653 BRAKE_MODULE: 2 XXX
  SG_ BRAKE_PRESSURE : 15|8@0+ (1,0) [0|255] "" XXX
@@ -93,10 +93,14 @@ BO_ 571 STEERING_WHEEL_BUTTONS_RIGHT: 8 XXX
 BO_ 559 GAS_PEDAL_HUMAN: 8 XXX
  SG_ GASPEDAL_HUMAN : 7|8@0+ (1,0) [0|255] "" XXX
 
+BO_ 729 FRONT_CAM: 8 XXX
+ SG_ FRONT_CAM : 23|8@0+ (1,0) [0|255] "" XXX
 
 
 
-CM_ SG_ 258 STEER_ANGLE "positive is left (counter-clockwise)";
+
+CM_ SG_ 258 STEER_ANGLE "positive is left (counter-clockwise), 0x1000=0 degrees, 0x14d5 max left, 0x0b23 max right";
+CM_ SG_ 258 STEERING_RATE "";
 CM_ SG_ 653 BRAKE_PRESSURE "max seems to be 148";
 CM_ SG_ 820 TURN_LIGHT_LEFT "oscillates with the light blinking";
 CM_ SG_ 820 TURN_LIGHT_RIGHT "hazard blinks both right and left lights";
@@ -110,5 +114,6 @@ CM_ SG_ 680 PRNDL "e=reverse, c=park, d=neutral, 1=drive, 2=drive, 3=drive, 4=dr
 CM_ SG_ 520 HUMAN_BRAKE "0=not pressed, 4=pressed, could be brake lights";
 CM_ SG_ 571 STEERING_WHEEL_BUTTONS_RIGHT "0x04=SET+, 0x08=SET-, 0x01=CANCEL, 0x40=REGCRUISE, 0x10=RES, 0x80=ACC, 0x02=DecreaseFollow, IncreaseFollow not shown";
 CM_ SG_ 559 GASPEDAL_HUMAN "Me pressing the gas";
+CM_ SG_ 729 FRONT_CAM "0x08, 0x0c, 0x04";
 VAL_ 792 TURN_SIGNALS 2 "Right" 1 "Left" ;
 VAL_ 680 PRNDL 8 "Drive" 7 "Drive" 6 "Drive" 5 "Drive" 4 "Drive" 3 "Drive" 2 "Drive" 1 "Drive" D "Neutral" E "Reverse" C "Park" ;
