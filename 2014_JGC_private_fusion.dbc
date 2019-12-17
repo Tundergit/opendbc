@@ -220,8 +220,14 @@ BO_ 672 ACC_d_1: 8 XXX
  SG_ NEW_SIGNAL_2 : 45|10@0+ (1,0) [0|1023] "" XXX
  SG_ object_detect : 7|8@0+ (1,0) [0|1] "" XXX
  SG_ REL_SPEED : 9|10@0+ (1,-512) [0|1023] "" XXX
+ SG_ checksum : 63|8@0+ (1,0) [0|1] "" XXX
 
 BO_ 704 ACC_c_1: 8 XXX
+
+BO_ 928 NEW_MSG_1: 8 XXX
+ SG_ NEW_SIGNAL_1 : 1|10@0+ (1,-512) [0|1] "" XXX
+ SG_ NEW_SIGNAL_2 : 17|10@0+ (1,-512) [0|1] "" XXX
+ SG_ NEW_SIGNAL_3 : 33|10@0+ (1,-512) [0|1] "" XXX
 
 
 
