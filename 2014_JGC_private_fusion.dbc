@@ -217,15 +217,14 @@ BO_ 692 d_10: 8 XXX
  SG_ REL_SPEED : 17|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
 
 BO_ 672 ACC_d_1: 8 XXX
- SG_ NEW_SIGNAL_2 : 45|10@0+ (1,0) [0|1023] "" XXX
- SG_ object_detect : 7|8@0+ (1,0) [0|1] "" XXX
  SG_ REL_SPEED : 9|10@0+ (1,-512) [0|1023] "" XXX
- SG_ checksum : 63|8@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 55|16@0+ (1,0) [0|1023] "" XXX
+ SG_ OBJ_DETECT : 7|8@0+ (1,0) [0|1] "" XXX
 
 BO_ 704 ACC_c_1: 8 XXX
- SG_ NEW_SIGNAL_3 : 33|10@0+ (1,-512) [0|1] "" XXX
  SG_ NEW_SIGNAL_2 : 17|10@0+ (1,-1024) [0|1] "" XXX
  SG_ NEW_SIGNAL_1 : 1|10@0+ (1,-1024) [0|1] "" XXX
+ SG_ LONG_DIST : 33|10@0+ (0,0) [0|1] "" XXX
 
 BO_ 928 NEW_MSG_1: 8 XXX
  SG_ NEW_SIGNAL_1 : 1|10@0+ (1,0) [0|1] "" XXX
@@ -241,4 +240,5 @@ CM_ SG_ 544 sig2 "perhaps distance to object. LONG_DIST or REL_ACCEL or REL_SPEE
 CM_ SG_ 576 zeros "not always zero, sometimes has value when another car changes lanes";
 CM_ SG_ 512 status0 "0x00 = normal, 0xa0 = FCW active + prefill, 0x90 = prefill";
 CM_ SG_ 706 LAT_DIST "positive is to the right, negative is to the left";
-CM_ SG_ 672 object_detect "0x00 no object, 0xFF object detected";
+CM_ SG_ 672 REL_SPEED "0x200 = 0 relative speed";
+CM_ SG_ 672 OBJ_DETECT "0x00 no object, 0xFF object detected";
