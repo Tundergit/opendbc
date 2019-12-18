@@ -222,9 +222,9 @@ BO_ 672 ACC_d_1: 8 XXX
  SG_ OBJ_DETECT : 7|8@0+ (1,0) [0|1] "" XXX
 
 BO_ 704 ACC_c_1: 8 XXX
- SG_ NEW_SIGNAL_2 : 17|10@0+ (1,-1024) [0|1] "" XXX
- SG_ NEW_SIGNAL_1 : 1|10@0+ (1,-1024) [0|1] "" XXX
  SG_ LONG_DIST : 33|10@0+ (0,0) [0|1] "" XXX
+ SG_ LAT_DIST_1 : 1|10@0+ (1,-1024) [0|1] "" XXX
+ SG_ LAT_DIST_2 : 17|10@0+ (1,-1024) [0|1] "" XXX
 
 BO_ 928 NEW_MSG_1: 8 XXX
  SG_ NEW_SIGNAL_1 : 1|10@0+ (1,0) [0|1] "" XXX
