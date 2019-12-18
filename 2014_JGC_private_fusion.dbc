@@ -112,14 +112,14 @@ BO_ 656 b_4: 8 XXX
  SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
 
-BO_ 512 unknown_200: 8 XXX
+BO_ 512 FCW: 8 XXX
  SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ increasing : 31|16@0+ (1,0) [0|255] "" XXX
  SG_ zeros_0 : 3|12@0+ (1,0) [0|63] "" XXX
  SG_ zeros_1 : 47|12@0+ (1,0) [0|63] "" XXX
- SG_ status0 : 7|4@0+ (1,0) [0|15] "" XXX
  SG_ unknown_0 : 23|8@0+ (1,0) [0|255] "" XXX
+ SG_ status0 : 7|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 514 unknown_202: 8 XXX
  SG_ COUNTER : 43|4@0+ (1,0) [0|15] "" XXX
@@ -239,5 +239,6 @@ CM_ SG_ 544 track_id "for message a_1 track_id is always 1, similar for other me
 CM_ SG_ 544 REL_ACCEL "perhaps REL_ACCEL because it responds faster and before REL_SPEED";
 CM_ SG_ 544 sig2 "perhaps distance to object. LONG_DIST or REL_ACCEL or REL_SPEED";
 CM_ SG_ 576 zeros "not always zero, sometimes has value when another car changes lanes";
+CM_ SG_ 512 status0 "0x00 = normal, 0xa0 = FCW active + prefill, 0x90 = prefill";
 CM_ SG_ 706 LAT_DIST "positive is to the right, negative is to the left";
 CM_ SG_ 672 object_detect "0x00 no object, 0xFF object detected";
