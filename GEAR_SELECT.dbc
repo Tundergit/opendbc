@@ -42,4 +42,4 @@ BO_ 368 GEAR: 8 XXX
 
 
 
-CM_ SG_ 368 PRNDL "4 = D, 2 = R, 0 = P, E = N, ";
+CM_ SG_ 368 PRNDL "4 = D, 2 = R, 0 = P, E = N, 3 = S (L)";
