@@ -37,9 +37,9 @@ BU_: XXX
 
 
 BO_ 368 GEAR: 8 XXX
- SG_ PRNDL : 19|4@0+ (1,0) [0|1] "" XXX
- SG_ COUNTER : 55|8@0+ (1,0) [0|1] "" XXX
- SG_ GEAR_CHECKSUM : 63|8@0+ (1,0) [0|1] "" XXX
+ SG_ PRNDL : 19|4@0+ (1,0) [0|15] "" XXX
+ SG_ COUNTER : 55|8@0+ (1,0) [0|255] "" XXX
+ SG_ GEAR_CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
 
 
 
