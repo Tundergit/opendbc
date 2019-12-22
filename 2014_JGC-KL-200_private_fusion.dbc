@@ -46,15 +46,15 @@ BO_ 512 LKAS: 8 XXX
  SG_ unknown_0 : 23|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 544 a_1: 8 XXX
- SG_ track_id : 7|4@0+ (1,0) [0|15] "" XXX
  SG_ REL_ACCEL : 3|12@0+ (1,0) [0|31] "" XXX
  SG_ status1 : 23|4@0+ (1,0) [0|15] "" XXX
- SG_ REL_SPEED : 19|12@0+ (1,0) [0|65535] "" XXX
  SG_ status2 : 39|6@0+ (1,0) [0|15] "" XXX
  SG_ sig2 : 33|10@0+ (1,0) [0|255] "" XXX
  SG_ zeros : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ REL_SPEED : 19|12@0+ (1,0) [0|65535] "" XXX
+ SG_ TRACK_ID : 7|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 576 b_1: 8 XXX
  SG_ sig0 : 7|8@0+ (1,0) [0|255] "" XXX
@@ -65,7 +65,6 @@ BO_ 576 b_1: 8 XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 608 a_2: 8 XXX
- SG_ track_id : 7|4@0+ (1,0) [0|15] "" XXX
  SG_ status1 : 23|4@0+ (1,0) [0|15] "" XXX
  SG_ REL_SPEED : 19|12@0+ (1,0) [0|65535] "" XXX
  SG_ status2 : 39|6@0+ (1,0) [0|15] "" XXX
@@ -74,6 +73,7 @@ BO_ 608 a_2: 8 XXX
  SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ REL_ACCEL : 3|12@0+ (1,0) [0|31] "" XXX
+ SG_ track_id : 7|4@0+ (1,0) [0|15] "" XXX
 
 BO_ 640 b_2: 8 XXX
  SG_ sig0 : 7|8@0+ (1,0) [0|255] "" XXX
@@ -84,10 +84,10 @@ BO_ 640 b_2: 8 XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 704 c_1: 8 XXX
- SG_ LAT_DIST : 18|11@0+ (0.005,-7) [0|2047] "m" XXX
  SG_ LONG_DIST : 34|11@0+ (0.05,0) [0|255] "m" XXX
  SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ LAT_DIST : 18|11@0+ (0.005,-5.12) [0|2047] "m" XXX
 
 BO_ 800 c_2: 8 XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
@@ -112,8 +112,8 @@ BO_ 672 d_1: 8 XXX
  SG_ REL_SPEED : 9|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
 
 BO_ 768 d_2: 8 XXX
- SG_ REL_SPEED : 9|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
  SG_ TRACK_ID : 15|6@0+ (1,0) [0|1] "" XXX
+ SG_ REL_SPEED : 9|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
 
 BO_ 832 d_3: 8 XXX
  SG_ REL_SPEED : 9|10@0+ (0.2857,-146.278) [0|1023] "m/s" XXX
@@ -126,9 +126,9 @@ BO_ 896 d_4: 8 XXX
 
 
 
-CM_ SG_ 544 track_id "for message a_1 track_id is always 1, similar for other messages and track_id";
 CM_ SG_ 544 REL_ACCEL "perhaps REL_ACCEL because it responds faster and before REL_SPEED";
 CM_ SG_ 544 sig2 "perhaps distance to object. LONG_DIST or REL_ACCEL or REL_SPEED";
+CM_ SG_ 544 TRACK_ID "a1 is always 1, a2 is 2";
 CM_ SG_ 576 zeros "not always zero, sometimes has value when another car changes lanes";
 CM_ SG_ 704 LAT_DIST "positive to the right, negative to the left";
 CM_ SG_ 800 LAT_DIST "positive to the right, negative to the left";
