@@ -102,20 +102,20 @@ BO_ 928 c_4: 8 XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 672 d_1: 8 XXX
- SG_ TRACK_ID : 15|6@0+ (1,0) [0|1] "" XXX
+ SG_ TRACK_ID : 15|6@0+ (1,0) [0|63] "" XXX
  SG_ REL_SPEED : 9|10@0+ (1,-512) [0|1023] "m/s" XXX
 
 BO_ 768 d_2: 8 XXX
- SG_ TRACK_ID : 15|6@0+ (1,0) [0|1] "" XXX
+ SG_ TRACK_ID : 15|6@0+ (1,0) [0|63] "" XXX
  SG_ REL_SPEED : 9|10@0+ (1,-512) [0|1023] "m/s" XXX
 
 BO_ 832 d_3: 8 XXX
  SG_ REL_SPEED : 9|10@0+ (1,-512) [0|1023] "m/s" XXX
- SG_ TRACK_ID : 15|6@0+ (1,0) [0|1] "" XXX
+ SG_ TRACK_ID : 15|6@0+ (1,0) [0|63] "" XXX
 
 BO_ 896 d_4: 8 XXX
  SG_ REL_SPEED : 9|10@0+ (1,-512) [0|1023] "m/s" XXX
- SG_ TRACK_ID : 15|6@0+ (1,0) [0|1] "" XXX
+ SG_ TRACK_ID : 15|6@0+ (1,0) [0|63] "" XXX
 
 
 
