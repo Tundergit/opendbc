@@ -43,6 +43,7 @@ BO_ 544 a_1: 8 XXX
  SG_ zeros : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ DIST_LEFT_LANE_2 : 19|12@0+ (1,0) [0|1] "" XXX
  SG_ DIST_LEFT_LANE : 3|12@0+ (1,0) [0|1] "" XXX
 
 BO_ 576 b_1: 8 XXX
@@ -108,7 +109,6 @@ BO_ 896 d_4: 8 XXX
 
 
 CM_ SG_ 544 sig2 "perhaps distance to object. LONG_DIST or REL_ACCEL or REL_SPEED";
-CM_ SG_ 544 DIST_LEFT_LANE "0x800 vehicle centered, lower left, higher right";
 CM_ SG_ 576 VEH_CENTER "0x280 when vehicle centered between lines";
 CM_ SG_ 608 DIST_RIGHT_LANE "0x800 centered/baseline";
 CM_ SG_ 704 LAT_DIST "positive to the right, negative to the left";
