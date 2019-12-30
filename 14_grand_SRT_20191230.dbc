@@ -47,9 +47,9 @@ BO_ 544 a_1: 8 XXX
  SG_ DIST_LEFT_LANE : 3|12@0+ (1,0) [0|1] "" XXX
 
 BO_ 576 b_1: 8 XXX
- SG_ COUNTER : 51|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ VEH_CENTER : 1|10@0+ (1,0) [0|1] "" XXX
+ SG_ LINE_VISIBILITY : 17|10@0+ (1,0) [0|1] "" XXX
 
 BO_ 608 a_2: 8 XXX
  SG_ status1 : 23|4@0+ (1,0) [0|15] "" XXX
