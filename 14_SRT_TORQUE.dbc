@@ -174,9 +174,9 @@ BO_ 308 ACCEL_GAS_134: 8 XXX
  SG_ ACCEL_134 : 46|7@0+ (1,0) [0|127] "" XXX
 
 BO_ 559 ACCEL_GAS_22F: 8 XXX
- SG_ ACCEL_22F : 3|4@0+ (1,0) [0|255] "" XXX
  SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ ACCEL_PEDAL_HUMAN : 7|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 660 BRAKE_RELATED_294: 8 XXX
  SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
@@ -207,10 +207,11 @@ BO_ 501 DASHBOARD: 8 XXX
 BO_ 500 ACC_2: 8 XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
- SG_ ACC_STATUS_1 : 7|3@0+ (1,0) [0|255] "" XXX
- SG_ BRAKE_MAYBE : 18|11@0+ (1,0) [0|255] "" XXX
  SG_ ACC_STATUS_2 : 21|3@0+ (1,0) [0|255] "" XXX
  SG_ BRAKE_BOOL_1 : 36|1@0+ (1,0) [0|3] "" XXX
+ SG_ ACC_STATUS_1 : 7|4@0+ (1,0) [0|255] "" XXX
+ SG_ ACC_ENG_TORQUE_REQ : 3|12@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_BRAKE_TORQUE_REQ : 18|10@0+ (1,0) [0|255] "" XXX
 
 BO_ 625 ACC_1: 8 XXX
  SG_ SPEED : 31|8@0+ (1,0) [0|255] "km/h" XXX
@@ -232,6 +233,9 @@ BO_ 760 ENGINE_TORQUE: 8 XXX
 
 BO_ 704 NEW_MSG_2: 8 XXX
  SG_ NEW_SIGNAL_1 : 35|12@0+ (1,0) [0|1] "" XXX
+
+BO_ 761 BRAKE_TORQUE: 8 XXX
+ SG_ BRAKE_TORQUE_REQUEST : 2|10@0+ (1,0) [0|1] "" XXX
 
 
 
@@ -272,10 +276,10 @@ CM_ SG_ 816 TOGGLE_PARKSENSE "sending 3000071ec0ff9000 enables or disables parks
 CM_ SG_ 324 SPEED_2 "signal is approx half other speeds";
 CM_ SG_ 501 ACC_SPEED_CONFIG_KPH "speed configured for ACC";
 CM_ SG_ 501 ACC_SPEED_CONFIG_MPH "speed configured for ACC";
-CM_ SG_ 500 ACC_STATUS_1 "2 briefly (9 packets) when ACC goes to green, 1 help when ACC coming to a stop and at a stop";
-CM_ SG_ 500 BRAKE_MAYBE "2046 in non-ACC and non-decel. Signal on deceleration. 818 for already stopped break.";
 CM_ SG_ 500 ACC_STATUS_2 "set to 1 in non-ACC, 3 when ACC enabled (white icon), and 7 when ACC in use (green icon)";
 CM_ SG_ 500 BRAKE_BOOL_1 "set to 1 when ACC decel. 0 on non-ACC and accel.";
+CM_ SG_ 500 ACC_STATUS_1 "8 ACC on, 0 ACC off";
+CM_ SG_ 500 ACC_BRAKE_TORQUE_REQ "2046 in non-ACC and non-decel. Signal on deceleration. 818 for already stopped break.";
 CM_ SG_ 625 SPEED "zero on non-acc drives";
 CM_ SG_ 625 ACCEL_PERHAPS "set to 7767 on non-ACC drives. ACC drive 40k is constant speed, 42k is accelerating";
 CM_ SG_ 268 BRAKE_PERHAPS "triggers only on ACC braking";
