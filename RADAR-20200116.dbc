@@ -73,7 +73,8 @@ BO_ 704 c_1: 8 XXX
  SG_ LONG_DIST : 34|11@0+ (0.05,0) [0|255] "m" XXX
  SG_ COUNTER : 55|4@0+ (1,0) [0|15] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
- SG_ LAT_DIST : 18|11@0+ (0.005,-5.12) [0|2047] "m" XXX
+ SG_ LAT1 : 2|11@0+ (0.005,-5.12) [0|2047] "m" XXX
+ SG_ LAT2 : 18|11@0+ (0.005,-5.12) [0|2047] "m" XXX
 
 BO_ 800 c_2: 8 XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
@@ -94,7 +95,7 @@ BO_ 928 c_4: 8 XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 672 d_1: 8 XXX
- SG_ REL_SPEED : 9|10@0+ (0,-20.48) [0|1023] "m/s" XXX
+ SG_ REL_SPEED : 9|10@0+ (0.25,-128) [0|1023] "m/s" XXX
 
 BO_ 768 d_2: 8 XXX
  SG_ REL_SPEED : 9|10@0+ (1,-512) [0|1023] "m/s" XXX
@@ -111,7 +112,8 @@ BO_ 896 d_4: 8 XXX
 CM_ SG_ 544 sig2 "perhaps distance to object. LONG_DIST or REL_ACCEL or REL_SPEED";
 CM_ SG_ 576 VEH_CENTER "0x280 when vehicle centered between lines";
 CM_ SG_ 608 DIST_RIGHT_LANE "0x800 centered/baseline";
-CM_ SG_ 704 LAT_DIST "positive to the right, negative to the left";
+CM_ SG_ 704 LAT1 "positive to the right, negative to the left";
+CM_ SG_ 704 LAT2 "positive to the right, negative to the left";
 CM_ SG_ 800 LAT_DIST "positive to the right, negative to the left";
 CM_ SG_ 864 LAT_DIST "positive to the right, negative to the left";
 CM_ SG_ 928 LAT_DIST "positive to the right, negative to the left";
