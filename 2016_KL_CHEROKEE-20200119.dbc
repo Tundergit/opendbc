@@ -57,6 +57,9 @@ BO_ 1264 STEERING_LEVERS: 8 XXX
  SG_ TURN_SIGNALS : 3|4@0+ (1,0) [0|15] "" XXX
  SG_ HIGH_BEAM_FLASH : 15|1@0+ (1,0) [0|1] "" XXX
 
+BO_ 480 TRACTION_BUTTON: 8 XXX
+ SG_ TRACTION_OFF : 3|1@0+ (1,0) [0|1] "" XXX
+
 
 
 
@@ -69,3 +72,4 @@ CM_ SG_ 1250 DOOR_OPEN_RR "1 = open, 0 = closed";
 CM_ SG_ 1262 PRNDL "1 = park, 2 = reverse, 3 = neutral, 4 = drive, 5 = sport";
 CM_ SG_ 875 SEATBELT_DRIVER_UNLATCHED "1 = unlatched, 0 = safety first";
 CM_ SG_ 1264 TURN_SIGNALS "0 = off, 1 = left blinker, 2 = right blinker";
+CM_ SG_ 480 TRACTION_OFF "0 = TCS on, 1 = TCS off (light on dash ON)";
