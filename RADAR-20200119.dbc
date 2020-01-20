@@ -95,16 +95,16 @@ BO_ 928 c_4: 8 XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 672 d_1: 8 XXX
- SG_ REL_SPEED : 9|10@0+ (0.0625,-32) [0|1023] "m/s" XXX
+ SG_ REL_SPEED : 9|10@0+ (-0.1875,96) [0|1023] "m/s" XXX
 
 BO_ 768 d_2: 8 XXX
- SG_ REL_SPEED : 9|10@0+ (0.0625,-32) [0|1023] "m/s" XXX
+ SG_ REL_SPEED : 9|10@0+ (-0.1875,96) [0|1023] "m/s" XXX
 
 BO_ 832 d_3: 8 XXX
- SG_ REL_SPEED : 9|10@0+ (0.0625,-32) [0|1023] "m/s" XXX
+ SG_ REL_SPEED : 9|10@0+ (-0.1875,96) [0|1023] "m/s" XXX
 
 BO_ 896 d_4: 8 XXX
- SG_ REL_SPEED : 9|10@0+ (0.0625,-32) [0|1023] "m/s" XXX
+ SG_ REL_SPEED : 9|10@0+ (-0.1875,96) [0|1023] "m/s" XXX
 
 
 
