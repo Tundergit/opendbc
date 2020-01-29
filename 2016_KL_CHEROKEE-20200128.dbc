@@ -75,6 +75,16 @@ BO_ 494 STEERING: 8 XXX
 
 BO_ 738 BRAKE_2: 8 XXX
 
+BO_ 762 WHEEL_BUTTONS: 8 XXX
+ SG_ CANCEL : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ RESUME : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ SET_INCREASE : 2|1@0+ (1,0) [0|1] "" XXX
+ SG_ SET_DECREASE : 3|1@0+ (1,0) [0|1] "" XXX
+ SG_ CRUISE_ON_OFF : 6|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_ON_OFF : 7|1@0+ (1,0) [0|1] "" XXX
+ SG_ INCREASE_ACC_DIST : 1|1@0+ (1,0) [0|1] "" XXX
+ SG_ DECREASE_ACC_DIST : 8|1@0+ (1,0) [0|1] "" XXX
+
 
 
 
