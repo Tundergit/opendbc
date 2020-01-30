@@ -1,0 +1,88 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BU_: XXX
+
+
+BO_ 492 EPS_STATUS: 8 XXX
+ SG_ STEERING_RATE : 27|12@0+ (1,0) [0|1] "" XXX
+ SG_ TORQUE_HUMAN : 3|12@0+ (1,-1024) [0|1] "deg" XXX
+
+BO_ 1250 DOORS: 8 XXX
+ SG_ TRUNK : 14|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FL : 10|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_FR : 11|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RL : 12|1@0+ (1,0) [0|1] "" XXX
+ SG_ DOOR_OPEN_RR : 13|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1262 GEAR: 8 XXX
+ SG_ PRNDL : 11|4@0+ (1,0) [0|15] "" XXX
+
+BO_ 875 SEATBELT_STATUS: 8 XXX
+ SG_ SEATBELT_DRIVER_UNLATCHED : 16|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1264 STEERING_LEVERS: 8 XXX
+ SG_ TURN_SIGNALS : 3|4@0+ (1,0) [0|15] "" XXX
+ SG_ HIGH_BEAM_FLASH : 15|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 480 TRACTION_BUTTON: 8 XXX
+ SG_ TRACTION_OFF : 3|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 740 WHEEL_SPEEDS: 8 XXX
+ SG_ WHEEL_SPEED_RL : 35|12@0+ (0.00625,0) [0|1] "" XXX
+ SG_ WHEEL_SPEED_RR : 19|12@0+ (0.00625,0) [0|1] "" XXX
+
+BO_ 520 EPS_STATUS_2: 8 XXX
+ SG_ NEW_SIGNAL_2 : 19|12@0+ (1,-2048) [0|1] "" XXX
+ SG_ NEW_SIGNAL_1 : 3|12@0+ (1,-2048) [0|1] "" XXX
+
+BO_ 494 STEERING: 8 XXX
+ SG_ STEERING_ANGLE : 3|12@0+ (1,0) [0|1] "" XXX
+
+BO_ 738 BRAKE_2: 8 XXX
+
+
+
+
+CM_ SG_ 492 TORQUE_HUMAN "0x400 is 0 degrees, pos is left, neg is right";
+CM_ SG_ 1250 TRUNK "1 = open, 0 = closed";
+CM_ SG_ 1250 DOOR_OPEN_FL "1 = open, 0 = closed";
+CM_ SG_ 1250 DOOR_OPEN_FR "1 = open, 0 = closed";
+CM_ SG_ 1250 DOOR_OPEN_RL "1 = open, 0 = closed";
+CM_ SG_ 1250 DOOR_OPEN_RR "1 = open, 0 = closed";
+CM_ SG_ 1262 PRNDL "1 = park, 2 = reverse, 3 = neutral, 4 = drive, 5 = sport";
+CM_ SG_ 875 SEATBELT_DRIVER_UNLATCHED "1 = unlatched, 0 = safety first";
+CM_ SG_ 1264 TURN_SIGNALS "0 = off, 1 = left blinker, 2 = right blinker";
+CM_ SG_ 480 TRACTION_OFF "0 = TCS on, 1 = TCS off (light on dash ON)";
