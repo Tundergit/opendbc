@@ -117,6 +117,10 @@ BO_ 500 GEARBOX_1: 8 XXX
  SG_ ACTUAL_GEAR : 39|4@0+ (1,0) [0|1] "" XXX
  SG_ CHECKSUM : 55|8@0+ (1,0) [0|1] "" XXX
 
+BO_ 498 NEW_MSG_2: 8 XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 63|8@0+ (1,0) [0|1] "" XXX
+
 
 
 
