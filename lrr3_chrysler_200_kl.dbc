@@ -80,9 +80,9 @@ BO_ 494 STEERING: 8 XXX
 BO_ 738 BRAKE_2: 8 XXX
  SG_ COUNTER : 51|4@0+ (1,0) [0|1] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|1] "" XXX
- SG_ BRAKE_LIGHTS : 8|1@0+ (1,0) [0|1] "" XXX
  SG_ BRAKE_HUMAN : 9|1@0+ (1,0) [0|1] "" XXX
  SG_ BRAKE_TORQUE : 7|12@0+ (1,0) [0|15] "" XXX
+ SG_ BRAKE_LIGHTS : 8|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 742 NEW_MSG_1: 8 XXX
 
@@ -125,6 +125,13 @@ BO_ 500 GEARBOX_1: 8 XXX
 BO_ 498 NEW_MSG_2: 8 XXX
  SG_ COUNTER : 51|4@0+ (1,0) [0|1] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|1] "" XXX
+
+BO_ 510 ACCEL_GAS: 8 XXX
+ SG_ ACC_ACTIVE : 2|1@0+ (1,0) [0|1] "" XXX
+ SG_ GAS_HUMAN : 15|8@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 27|4@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 39|8@0+ (1,0) [0|1] "" XXX
+ SG_ GAS_ACC : 28|1@0+ (1,0) [0|1] "" XXX
 
 
 
