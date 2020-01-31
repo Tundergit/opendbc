@@ -93,6 +93,18 @@ BO_ 1500 LKAS_2: 8 XXX
 
 BO_ 1508 LKAS_3: 8 XXX
 
+BO_ 762 NEW_MSG_2: 8 XXX
+ SG_ COUNTER : 15|4@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 23|8@0+ (1,0) [0|1] "" XXX
+ SG_ CANCEL : 0|1@0+ (1,0) [0|1] "" XXX
+ SG_ RESUME : 4|1@0+ (1,0) [0|1] "" XXX
+ SG_ SET_INCREASE : 2|1@0+ (1,0) [0|1] "" XXX
+ SG_ SET_DECREASE : 3|1@0+ (1,0) [0|1] "" XXX
+ SG_ REG_CRUISE : 6|1@0+ (1,0) [0|1] "" XXX
+ SG_ ACC_CRUISE : 7|1@0+ (1,0) [0|1] "" XXX
+ SG_ DECREASE_DIST : 1|1@0+ (1,0) [0|1] "" XXX
+ SG_ INCREASE_DIST : 8|1@0+ (1,0) [0|1] "" XXX
+
 
 
 
