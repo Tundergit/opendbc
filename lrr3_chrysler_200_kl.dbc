@@ -74,6 +74,9 @@ BO_ 740 WHEEL_SPEEDS_REAR: 8 XXX
 BO_ 520 EPS_STATUS_2: 8 XXX
  SG_ NEW_SIGNAL_2 : 19|12@0+ (1,-2048) [0|1] "" XXX
  SG_ NEW_SIGNAL_1 : 3|12@0+ (1,-2048) [0|1] "" XXX
+ SG_ NEW_SIGNAL_3 : 39|12@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 43|4@0+ (1,0) [0|1] "" XXX
+ SG_ CHECKSUM : 55|8@0+ (1,0) [0|1] "" XXX
 
 BO_ 494 STEERING: 8 XXX
  SG_ STEERING_ANGLE : 3|12@0+ (0,-256) [0|1] "" XXX
@@ -102,7 +105,12 @@ BO_ 502 LKAS_COMMANDS: 8 XXX
 
 BO_ 1498 LKAS_1: 8 XXX
 
-BO_ 1500 LKAS_2: 8 XXX
+BO_ 1500 LKAS_HUD: 8 XXX
+ SG_ LEFT_WHITE : 18|1@0+ (1,0) [0|1] "" XXX
+ SG_ LEFT_YELLOW : 19|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_1 : 1|0@0+ (1,0) [0|1] "" XXX
+ SG_ RIGHT_WHITE : 17|1@0+ (1,0) [0|1] "" XXX
+ SG_ RIGHT_YELLOW : 16|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 1508 LKAS_3: 8 XXX
 
@@ -141,6 +149,9 @@ BO_ 510 ACCEL_GAS: 8 XXX
  SG_ CHECKSUM : 39|8@0+ (1,0) [0|1] "" XXX
  SG_ GAS_ACC : 28|1@0+ (1,0) [0|1] "" XXX
 
+BO_ 1492 NEW_MSG_1: 8 XXX
+ SG_ LEAD_CAR : 23|4@0+ (1,0) [0|1] "" XXX
+
 
 
 
@@ -154,3 +165,4 @@ CM_ SG_ 1262 PRNDL "1 = park, 2 = reverse, 3 = neutral, 4 = drive, 5 = sport";
 CM_ SG_ 875 SEATBELT_DRIVER_UNLATCHED "1 = unlatched, 0 = safety first";
 CM_ SG_ 1264 TURN_SIGNALS "0 = off, 1 = left blinker, 2 = right blinker";
 CM_ SG_ 480 TRACTION_OFF "0 = TCS on, 1 = TCS off (light on dash ON)";
+CM_ SG_ 1492 LEAD_CAR "lead car present = 4, no car = 2 ";
