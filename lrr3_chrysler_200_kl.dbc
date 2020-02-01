@@ -106,13 +106,11 @@ BO_ 502 LKAS_COMMANDS: 8 XXX
 BO_ 1498 LKAS_1: 8 XXX
 
 BO_ 1500 LKAS_HUD: 8 XXX
- SG_ LEFT_WHITE : 18|1@0+ (1,0) [0|1] "" XXX
- SG_ LEFT_YELLOW : 19|1@0+ (1,0) [0|1] "" XXX
- SG_ LKAS_1 : 1|0@0+ (1,0) [0|1] "" XXX
- SG_ RIGHT_WHITE : 17|1@0+ (1,0) [0|1] "" XXX
- SG_ RIGHT_YELLOW : 16|1@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_ICON_COLOR : 1|2@0+ (1,0) [0|1] "" XXX
+ SG_ LKAS_LANE_LINES : 16|4@1+ (1,0) [0|15] "" XXX
 
-BO_ 1508 LKAS_3: 8 XXX
+BO_ 1508 LKAS_HEARTBIT: 8 XXX
+ SG_ LKAS_STATUS_OK : 28|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 762 WHEEL_BUTTONS: 8 XXX
  SG_ COUNTER : 15|4@0+ (1,0) [0|1] "" XXX
@@ -165,4 +163,5 @@ CM_ SG_ 1262 PRNDL "1 = park, 2 = reverse, 3 = neutral, 4 = drive, 5 = sport";
 CM_ SG_ 875 SEATBELT_DRIVER_UNLATCHED "1 = unlatched, 0 = safety first";
 CM_ SG_ 1264 TURN_SIGNALS "0 = off, 1 = left blinker, 2 = right blinker";
 CM_ SG_ 480 TRACTION_OFF "0 = TCS on, 1 = TCS off (light on dash ON)";
+CM_ SG_ 1500 LKAS_LANE_LINES "0x01 transparent lines, 0x02 left white, 0x03 right white, 0x04 left yellow with car on top, 0x05 left yellow with car on top, 0x06 both white, 0x07 left yellow, 0x08 left yellow right white, 0x09 right yellow, 0x0a right yellow left white, 0x0b left yellow with car on top right white, 0x0c right yellow with car on top left white, (0x00, 0x0d, 0x0e, 0x0f) null";
 CM_ SG_ 1492 LEAD_CAR "lead car present = 4, no car = 2 ";
