@@ -36,10 +36,11 @@ BS_:
 BU_: XXX
 
 
-BO_ 498 NEW_MSG_1: 8 XXX
+BO_ 498 ACC_2: 8 XXX
  SG_ ACC_STATUS_2 : 47|4@0+ (1,0) [0|1] "" XXX
  SG_ CHECKSUM : 63|8@0+ (1,0) [0|1] "" XXX
  SG_ ACC_STATUS_1 : 26|3@0+ (1,0) [0|1] "" XXX
+ SG_ COUNTER : 51|4@0+ (1,0) [0|1] "" XXX
 
 
 
