@@ -40,4 +40,9 @@ BO_ 1006 NEW_MSG_1: 8 XXX
  SG_ NEW_SIGNAL_1 : 7|4@0+ (1,0) [0|1] "" XXX
 
 BO_ 502 NEW_MSG_2: 8 XXX
- SG_ NEW_SIGNAL_1 : 12|2@0+ (1,0) [0|3] "" XXX
+ SG_ LKA_STATUS : 12|2@0+ (1,0) [0|3] "" XXX
+
+
+
+
+CM_ SG_ 502 LKA_STATUS "2 = active (green), 1 = error";
